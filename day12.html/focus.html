@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //focus
+    <input type="text" id="myinput">
+    <script>
+        document.getElementById("myinput").addEventListener("focus",function(){
+        this.style.backgroundColor="lightblue";
+    });
+    </script>
+
+//blur
+<input type="text"id="myinput">
+<script>
+    document.getElementById("myinput").addEventListener("blur",function(){
+        this.style.backgroundColor="green";
+    });
+</script>
+</body>
+</html>

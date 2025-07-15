@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        
+
+
+<script>
+        document.body.style.backgroundColor="lightblue";
+        </script>
+<p class="intro">hello</p>
+        <script>
+                const element=document.querySelector("intro");
+                element.style.fontweight="bold";
+        </script>
+
+        <p class="note">note 1</p>
+        <p class="note">note 2</p>
+        <script>
+                const allparaQuery=document.querySelectorAll(".note");
+                for (let i=0;i<allparaQuery.length;i++){
+                  allparaQuery[i].style.backgroundColor="Orange";
+                }
+        </script>
+
+</body>
+</html>
+

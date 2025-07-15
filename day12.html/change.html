@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="myinput">
+        <option>apple</option>
+        <option>banana</option>
+    </select>
+    <script>
+        document.getElementById("myinput").addEventListener("change",function(){
+            alert("input changed to:"+this.value);
+        });
+    </script>
+</body>
+</html>
