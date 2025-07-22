@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Text Box</title>
+    <style>
+        #inputBox {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #display {
+            margin-top: 10px;
+            font-weight: bold;
+            color: blue;
+        }
+        #finalText {
+            margin-top: 10px;
+            font-style: italic;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Interactive Text Box</h2>
+    <input type="text" id="inputBox" placeholder="Type something..." />
+    <div id="display"></div>
+    <div id="finalText"></div>
+
+    <script>
+        var inputBox = document.getElementById('inputBox');
+        var display = document.getElementById('display');
+        var finalText = document.getElementById('finalText');
+
+        // 1. Display typed text live
+        inputBox.addEventListener('input', function() {
+            display.innerText = "Live: " + inputBox.value;
+        });
+
+        // 2. Change background on focus
+        inputBox.addEventListener('focus', function() {
+            inputBox.style.backgroundColor = '#e0f7fa';
+        });
+
+        // 3. Reset background and show final text on blur
+        inputBox.addEventListener('blur', function() {
+            inputBox.style.backgroundColor = '';
+            finalText.innerText = "Final Text: " + inputBox.value;
+        });
+
+        // 4. Alert on double click
+        inputBox.addEventListener('dblclick', function() {
+            alert("Double click detected!");
+        });
+    </script>
+
+</body>
+</html>
+</body>
+</html>
